@@ -34,9 +34,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Describe state.
 
+    State is the current data rendered on the page. State can be stored and changed using the useState hook.
+
 - [ ] Describe props.
 
+    Props are attributes of a component that can be inported to other components or elements.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+
 
 ## Project Set Up
 
