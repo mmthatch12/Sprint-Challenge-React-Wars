@@ -11,8 +11,9 @@ export default function CharacterGrid() {
         axios
             .get(`https://swapi.co/api/people/?format=json`)
             .then(response => {
-                const theName = response.data.results.name
+                const theName = response.data.results
                 console.log('is this it?:', theName)
+                
                 setName(theName)
 
             })
