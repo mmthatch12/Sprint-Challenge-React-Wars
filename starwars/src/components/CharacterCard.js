@@ -6,13 +6,16 @@ const CardStyleDiv2 = styled.div`
     margin: 10px;
     text-align: left;
     border: 1px solid #443e3e;
-    box-shadow: 5px 1px #fff; 
-    width: 40%;
+    box-shadow: 1px 1px 1px 1px #fff; 
+    width: 500px;
+    border-radius: 7px;
 `;
 
 const CardStyleH2 = styled.h2`
-    color: blue;
+    color: #443e9e;
+    text-shadow: 1px 1px 5px #fff;
     margin: 0; 
+    text-align: center;
 `;
 
 const CardStyleH3 = styled.h3`
