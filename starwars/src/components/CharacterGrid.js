@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import CharacterCard from './CharacterCard'
 
 // https://swapi.co/api/people/?format=json
 
@@ -12,7 +13,14 @@ export default CharacterGrid () {
             .then(response => {
                 const theName = response.data.results.name
                 console.log('is this it?:', theName)
+                setName(theName)
 
             })
-    }, []);
+    }, [])
+
+    // return (
+    //     <div>
+    //         <CharacterCard name={charaName} />
+    //     </div>
+    // )
 }
