@@ -4,7 +4,7 @@ import CharacterCard from './CharacterCard'
 
 // https://swapi.co/api/people/?format=json
 
-export default CharacterGrid () {
+export default function CharacterGrid() {
     const [charaName, setName] = useState([])
 
     useEffect(() => {
@@ -18,9 +18,12 @@ export default CharacterGrid () {
             })
     }, [])
 
-    // return (
-    //     <div>
-    //         <CharacterCard name={charaName} />
-    //     </div>
-    // )
+    return (
+        <div>
+            {charaName.map(item => {
+                return <CharacterCard name={item} />
+
+            })}
+        </div>
+    )
 }
