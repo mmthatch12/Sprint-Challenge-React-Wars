@@ -13,9 +13,7 @@ export default function CharacterGrid() {
             .then(response => {
                 const theName = response.data.results
                 console.log('is this it?:', theName)
-                
                 setName(theName)
-
             })
     }, [])
 
