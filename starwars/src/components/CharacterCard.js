@@ -3,14 +3,13 @@ import styled from 'styled-components'
 
 const CardStyle = styled.h2`
     color: blue;
-    border:3px solid yellow;
 `;
 
 
-export default function CharacterCard( {name} ) {
+export default function CharacterCard(props) {
     return (
         <div>
-            <CardStyle>{name}</CardStyle>
+            <CardStyle>{props.name}, {props.hair}</CardStyle>
         </div>
     )
 }
