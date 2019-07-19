@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 
-//https://swapi.co/api/people/?format=json
+// https://swapi.co/api/people/?format=json
 
 export default CharacterGrid () {
-    const [name, setName] = useState([])
+    const [charaName, setName] = useState([])
 
     useEffect(() => {
-        axios 
-    })
+        axios
+            .get(`https://swapi.co/api/people/?format=json`)
+            .then(response => {
+                const theName = response.data.results.name
+                console.log('is this it?:', theName)
+
+            })
+    }, []);
 }
