@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const CardStyleDiv = styled.div`
+
+const CardStyleDiv2 = styled.div`
     margin: 10px;
     display: flex;
-    flex-direction: column;
 `;
 
-
-const CardStyle = styled.h2`
+const CardStyleH2 = styled.h2`
     color: blue;
+    margin: 0;
+`;
+
+const CardStyleH3 = styled.h3`
+    color: black;
     margin: 0;
 `;
 
@@ -17,10 +21,12 @@ const CardStyle = styled.h2`
 export default function CharacterCard(props) {
     return (
         <div>
-            <CardStyleDiv>
-                <CardStyle>{props.name}</CardStyle>
-                <CardStyle>Hair Color:{props.hair}</CardStyle>
-            </CardStyleDiv>
+                <CardStyleDiv2>
+                    <CardStyleH2>{props.name} </CardStyleH2>
+                    <CardStyleH3>   Hair Color:{props.hair}</CardStyleH3>
+                </CardStyleDiv2>
+
+            
         </div>
     )
 }
