@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Button from './Button'
 
 
 const CardStyleDiv2 = styled.div`
@@ -32,6 +33,7 @@ export default function CharacterCard(props) {
                     <CardStyleH2>{props.name}</CardStyleH2>
                     <CardStyleH3>Hair Color:{props.hair}</CardStyleH3>
                     <CardStyleH3>Gender:{props.gender}</CardStyleH3>
+                    <Button />
                 </CardStyleDiv2>
 
             
