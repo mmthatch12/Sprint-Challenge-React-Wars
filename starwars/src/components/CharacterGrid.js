@@ -13,16 +13,18 @@ export default function CharacterGrid() {
             .then(response => {
                 const theName = response.data.results
                 console.log('is this it?:', theName)
-                setName(theName)
+                const arrayAccess = theName.map(item => {
+                    return item.name
+                })
+                setName(arrayAccess)
             })
     }, [])
 
     return (
         <div>
-            {charaName.map(item => {
-                return <CharacterCard name={item} />
 
-            })}
+            <CharacterCard name={charaName} />
+
         </div>
     )
 }
