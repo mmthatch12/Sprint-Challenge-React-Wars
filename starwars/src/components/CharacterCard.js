@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components'
+
+const CardStyle = styled.h2`
+    color: blue;
+    border:3px solid yellow;
+`;
+
 
 export default function CharacterCard( {name} ) {
     return (
         <div>
-            <h2>{name}</h2>
+            <CardStyle>{name}</CardStyle>
         </div>
     )
 }
