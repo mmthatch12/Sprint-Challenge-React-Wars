@@ -26,7 +26,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React JS is a library that allows the user to combine javascript and html and css in the same file. It also allows for the import and exporting of those files into/outof files accross the project. This help significantly to improve organization, readability, and usability. 
+
 - [ ] What does it mean to _think_ in react?
+
+    To think in react means to have the organization of files top of mind as you are creating your project. Those who think in react think not only about what code they are writing, but also how they are writing it and how the reviewer or team member will be able to build on the code.
 
 - [ ] Describe state.
 
