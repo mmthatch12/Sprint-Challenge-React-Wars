@@ -38,9 +38,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Describe props.
 
-    Props are attributes of a component that can be inported to other components or elements.
+    Props are attributes of a component that can be imported/exported to other components or elements.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects are data that come from outside of a function or project. To sync effects in a react component the useEffect hook must be used in conjunction with the useState hook. UseEffect is used for getting the data with axios, useState is used to store/change the state of whatever data is coming in.
 
 
 
