@@ -20,7 +20,7 @@ export default function CharacterGrid() {
     return (
         <div>
             {charaName.map(item => {
-                    return <CharacterCard name={item.name} hair={item.hair_color} key={item.url} />
+                    return <CharacterCard name={item.name} hair={item.hair_color} gender={item.gender} key={item.url} />
                 })
             }
         </div>
